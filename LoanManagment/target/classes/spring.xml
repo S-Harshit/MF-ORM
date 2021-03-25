@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	
+	<bean id="info" class="com.ncu.LoanManagment.Sourcing" ></bean>
+   	
+   	<bean id="quickinfo" class="com.ncu.LoanManagment.QuickData"></bean>
+    
+    <bean id="gen" class="com.ncu.LoanManagment.Generate"></bean>
+    
+    <bean id="edu" class="com.ncu.LoanManagment.Education"></bean>
+    
+    <bean id="dupe" class="com.ncu.LoanManagment.Dedupe"></bean>
+    
+    <bean id="io" class="com.ncu.LoanManagment.IOOperation"></bean>
+    
+    <bean id="score" class="com.ncu.LoanManagment.Scoring"></bean>
+    
+    
+</beans>

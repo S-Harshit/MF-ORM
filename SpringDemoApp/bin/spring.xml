@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean id="fast" class="com.ncu.FastProduce"></bean>
+	
+
+	<bean id="fort" class="fourth.Fortune" ></bean>
+   
+    <bean id="base" class="fourth.Baseball" ><constructor-arg ref="fort"/></bean>
+   
+    <bean id="cricket" class="fourth.Cricket" ><property name = "email" value="blabla@gmail.com"/><constructor-arg name="team" value="teamio"></constructor-arg></bean>
+	
+	<bean id="add" class = "fourth.address"><!--<property name="state" value="tokyo"/><property name="pincode" value = "19238" />--><constructor-arg name="state" value="somwhere"></constructor-arg><constructor-arg name="pincode" value="214124"></constructor-arg></bean>
+	
+    <bean id="tennis" class="fourth.TennisCoach" scope="prototype"></bean>
+    
+    <bean id='blife' class="fourth.Beanlife" init-method="thiswillbecalledfirst" destroy-method="thiswillbecalledlast"></bean>
+	
+	
+	<bean id='checkC' class="com.scope.CheckC" scope="prototype"><constructor-arg name="c" value="54"></constructor-arg></bean>
+	
+	<bean id='checkB' class="com.scope.CheckB" scope="singleton"><property name="c" ref="checkC"></property></bean>
+	
+	<bean id='checkA' class="com.scope.CheckA" scope="singleton"><property name="b" ref="checkB"></property></bean>
+</beans>
