@@ -9,10 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Name you entered: ${name }</h1>
-	<h1>Password you entered: ${pass }</h1>
+	<h1>User Name you entered: ${name }</h1>
+	<h1>User Password you entered: ${pass }</h1>
 	<h1>Message is: ${message }</h1>
-
-
 </body>
 </html>

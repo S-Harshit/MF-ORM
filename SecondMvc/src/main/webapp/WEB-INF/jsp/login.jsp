@@ -6,19 +6,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="resources/css/my-test.css"
-    rel="stylesheet">
-<title>Login Page</title>
+<link href="resources/css/my-test.css" rel="stylesheet">
+
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Welcome Harshit</h1>
+	<h1>Welcome Page</h1>
 	<form:form action="now" method="post" modelAttribute="model">
- 			Enter Student Name: <form:input path="name" />
-			Enter Student id: <form:input path="id" />
+ 			Student name will be here: <form:input path="name" />
+			Student id: <form:input path="id" />
 		<form:button>Login</form:button>
 	</form:form>
 </body>
 </html>
+
+
 <%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
