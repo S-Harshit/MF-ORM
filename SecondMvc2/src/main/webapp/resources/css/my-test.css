@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #8080ff;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	color: gray;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+h1.gopal:hover {
+	color: olive;
+	text-align: right;
+	font-weight: 900;
+}
+
+img.ha:hover {
+	width: 40;
+	height: 40;
+}
+
+h1.gopal {
+	color: blue;
+	text-align: right;
+	font-weight: 900;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+}
